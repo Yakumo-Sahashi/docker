@@ -13,7 +13,7 @@ docker run -d --name mysql-test -e MYSQL_ROOT_PASSWORD=1234 \
 
 Esperar a que MySQL inicialice, luego crear datos
 ```bash
-docker exec -it mysql-test mysql -uroot -p1234 -e \
+docker exec -it mysql-test mysql -u root -p 1234 -e \
   "CREATE DATABASE demo; USE demo; \
    CREATE TABLE t(id INT); INSERT INTO t VALUES (1);"
 ```
