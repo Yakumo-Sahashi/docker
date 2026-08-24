@@ -1,4 +1,4 @@
-# Imagenes, Volumenes y Redes
+# Docker Compose
 ---
 ## Ejercicios prácticos
 
