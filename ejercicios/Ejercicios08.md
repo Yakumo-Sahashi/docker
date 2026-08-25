@@ -36,18 +36,18 @@ Cliente (navegador)
 
 ## Actividades guiadas
 
-8.	Analizar la aplicación Laravel proporcionada (o una base mínima de Laravel generada con composer create-project): identificar requisitos de PHP, extensiones necesarias y variables de configuración (.env de Laravel).
-9.	Crear el Dockerfile del servicio de aplicación, partiendo de una imagen oficial de PHP-FPM, instalando extensiones necesarias (pdo_mysql, mbstring, etc.) y Composer.
-10.	Crear el archivo docker-compose.yml con los tres servicios, sus dependencias, redes y volúmenes.
-11.	Configurar PHP para exponer el puerto 9000 (PHP-FPM) y montar el código de la aplicación.
-12.	Configurar Nginx como proxy inverso hacia el servicio 'app' en el puerto 9000, publicando el puerto 80 del contenedor hacia el 8080 del host.
-13.	Configurar el servicio MySQL con las variables de entorno correspondientes (usuario, base de datos, contraseña) tomadas del archivo .env.
-14.	Crear la red Docker personalizada que conecte los tres servicios entre sí.
-15.	Crear el volumen nombrado para persistir /var/lib/mysql.
-16.	Levantar todos los servicios con docker compose up -d y verificar el estado con docker compose ps.
-17.	Probar la aplicación desde el navegador (http://localhost:8080), validando que las páginas cargan y que Laravel logra conectarse a la base de datos.
-18.	Generar la imagen final del servicio de aplicación con un tag versionado (por ejemplo, mi-laravel-app:1.0).
-19.	Distribuir la imagen: publicarla en Docker Hub (o un registro privado) y descargarla/ejecutarla desde otro equipo o entorno para confirmar su portabilidad.
+1.	Analizar la aplicación Laravel proporcionada (o una base mínima de Laravel generada con composer create-project): identificar requisitos de PHP, extensiones necesarias y variables de configuración (.env de Laravel).
+2.	Crear el Dockerfile del servicio de aplicación, partiendo de una imagen oficial de PHP-FPM, instalando extensiones necesarias (pdo_mysql, mbstring, etc.) y Composer.
+3.	Crear el archivo docker-compose.yml con los tres servicios, sus dependencias, redes y volúmenes.
+4.	Configurar PHP para exponer el puerto 9000 (PHP-FPM) y montar el código de la aplicación.
+5.	Configurar Nginx como proxy inverso hacia el servicio 'app' en el puerto 9000, publicando el puerto 80 del contenedor hacia el 8080 del host.
+6.	Configurar el servicio MySQL con las variables de entorno correspondientes (usuario, base de datos, contraseña) tomadas del archivo .env.
+7.	Crear la red Docker personalizada que conecte los tres servicios entre sí.
+8.	Crear el volumen nombrado para persistir /var/lib/mysql.
+9.	Levantar todos los servicios con docker compose up -d y verificar el estado con docker compose ps.
+10.	Probar la aplicación desde el navegador (http://localhost:8080), validando que las páginas cargan y que Laravel logra conectarse a la base de datos.
+11.	Generar la imagen final del servicio de aplicación con un tag versionado (por ejemplo, mi-laravel-app:1.0).
+12.	Distribuir la imagen: publicarla en Docker Hub (o un registro privado) y descargarla/ejecutarla desde otro equipo o entorno para confirmar su portabilidad.
 
 
 ---
