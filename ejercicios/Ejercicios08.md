@@ -70,7 +70,7 @@ proyecto-integrador/
 
 ---
 
-## Rúbrica de evaluación sugerida
+## Rúbrica de evaluación
 
 | Criterio | Descripcion |
 |----------|-------------|
